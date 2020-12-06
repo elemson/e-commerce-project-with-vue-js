@@ -4,11 +4,11 @@
       class="original-price"
       :class="{ 'discounted-original-price': discountedPrice }"
     >
-      ${{ round(original) }}
+      €{{ round(original) }}
     </span>
     &nbsp;&nbsp;
     <span v-if="discountedPrice" class="discounted-price">
-      ${{ round(discountedPrice) }}
+     €{{ round(discountedPrice) }}
     </span>
     <span v-if="discountPercentage"> {{  discountPercentage * 100}}% OFF</span>
   </p>
